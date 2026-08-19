@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch Configurator</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 10px;
+      background: #0ea5e9;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .status {
+      margin-top: 16px;
+      padding: 12px;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      background: #0b1220;
+      min-height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Switch Configurator</h1>
+      <p>Pagina locale caricata correttamente.</p>
+
+      <button id="pingBtn">Invia ping al backend</button>
+
+      <div class="status" id="statusBox">Pronto.</div>
+    </div>
+  </div>
+
+  <script>
+    const pingBtn = document.getElementById('pingBtn');
+    const statusBox = document.getElementById('statusBox');
+
+    function setStatus(text) {
+      statusBox.textContent = text;
+    }
+
+    pingBtn.addEventListener('click', () => {
+      if (window.chrome && window.chrome.webview) {
+        setStatus('Invio ping al backend...');
+        window.chrome.webview.postMessage('ping');
+      } else {
+        setStatus('Bridge WebView2 non disponibile.');
+      }
+    });
+
+    if (window.chrome && window.chrome.webview) {
+      window.chrome.webview.addEventListener('message', (event) => {
+        setStatus('Risposta backend: ' + event.data);
+      });
+    }
+  </script>
+</body>
+</html>

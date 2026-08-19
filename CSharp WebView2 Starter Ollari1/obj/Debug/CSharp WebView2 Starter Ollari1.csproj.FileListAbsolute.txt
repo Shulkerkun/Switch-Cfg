@@ -1,0 +1,21 @@
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Switch Configurator cs.exe.config
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Switch Configurator cs.exe
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Switch Configurator cs.pdb
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.Core.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.Core.xml
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp WebView2 Starter Ollari1.csproj.AssemblyReference.cache
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp WebView2 Starter Ollari1.csproj.SuggestedBindingRedirects.cache
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\namespace_Configurate.frmMain.resources
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp_WebView2_Starter_Ollari1.Properties.Resources.resources
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp WebView2 Starter Ollari1.csproj.GenerateResource.cache
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp WebView2 Starter Ollari1.csproj.CoreCompileInputs.cache
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\CSharp WebView2 Starter Ollari1.csproj.CopyComplete
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\Switch Configurator cs.exe
+F:\Scuola2025-2026\Switch Cfg\CSharp WebView2 Starter Ollari1\obj\Debug\Switch Configurator cs.pdb

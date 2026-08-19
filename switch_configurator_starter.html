@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Switch Configurator - Starter</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 { margin: 0 0 8px; }
+    .subtitle { color: var(--muted); margin-bottom: 24px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.95);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .row-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    input, select, button, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    button {
+      cursor: pointer;
+      background: #0ea5e9;
+      border: none;
+      font-weight: bold;
+      transition: 0.15s ease;
+    }
+
+    button:hover { filter: brightness(1.05); }
+    button.secondary { background: #374151; }
+    button.warn { background: #b45309; }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .status {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #0b1220;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      min-height: 44px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th { color: var(--muted); }
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .up { background: rgba(34,197,94,0.15); color: #86efac; }
+    .down { background: rgba(239,68,68,0.15); color: #fca5a5; }
+
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    code.inline {
+      background: #111827;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2px 6px;
+      color: #7dd3fc;
+    }
+
+    @media (max-width: 860px) {
+      .grid, .row, .row-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Switch Configurator</h1>
+    <div class="subtitle">Starter didattico in HTML/CSS/JavaScript con sezione IP scan e configurazione base switch.</div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>IP Scan</h2>
+
+        <div class="row-3">
+          <div>
+            <label for="subnet">Subnet</label>
+            <input id="subnet" value="192.168.1" placeholder="192.168.1" />
+          </div>
+          <div>
+            <label for="startHost">Host iniziale</label>
+            <input id="startHost" type="number" min="1" max="254" value="1" />
+          </div>
+          <div>
+            <label for="endHost">Host finale</label>
+            <input id="endHost" type="number" min="1" max="254" value="30" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="port">Porta HTTP target</label>
+            <input id="port" type="number" min="1" max="65535" value="80" />
+          </div>
+          <div>
+            <label for="timeout">Timeout (ms)</label>
+            <input id="timeout" type="number" min="100" max="10000" value="1200" />
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <button id="scanBtn">Avvia scansione</button>
+          <button id="demoBtn" class="secondary">Carica demo</button>
+          <button id="clearBtn" class="warn">Pulisci</button>
+        </div>
+
+        <div class="status" id="scanStatus">Pronto. Questo starter usa una modalità demo. Per una scansione reale serve un piccolo backend locale.</div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>IP</th>
+              <th>Stato</th>
+              <th>HTTP</th>
+              <th>Dettagli</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+
+        <div class="note">
+          In un normale browser, una pagina HTML/JS non può fare una vera scansione LAN via ICMP/TCP arbitrario per limiti di sicurezza.
+          La strada corretta è: frontend web + servizio locale HTTP (Node/Python/C#) che esegue la scansione e restituisce JSON.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Configurazione switch (bozza UI)</h2>
+
+        <div class="row">
+          <div>
+            <label for="switchIp">IP switch</label>
+            <input id="switchIp" placeholder="192.168.1.10" />
+          </div>
+          <div>
+            <label for="switchModel">Modello</label>
+            <select id="switchModel">
+              <option>Generico managed switch</option>
+              <option>Cisco-like CLI</option>
+              <option>HP/Aruba-like CLI</option>
+              <option>MikroTik-like</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="vlanId">VLAN ID</label>
+            <input id="vlanId" type="number" min="1" max="4094" value="10" />
+          </div>
+          <div>
+            <label for="vlanName">Nome VLAN</label>
+            <input id="vlanName" value="Uffici" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="ports">Porte access</label>
+            <input id="ports" value="1,2,3,4" />
+          </div>
+          <div>
+            <label for="uplink">Porta trunk/uplink</label>
+            <input id="uplink" value="24" />
+          </div>
+        </div>
+
+        <label for="preview">Anteprima comandi</label>
+        <textarea id="preview" rows="14" readonly></textarea>
+
+        <div class="toolbar">
+          <button id="genBtn">Genera configurazione</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const resultsBody = document.getElementById('resultsBody');
+    const scanStatus = document.getElementById('scanStatus');
+
+    function addRow(row) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${row.ip}</td>
+        <td><span class="tag ${row.up ? 'up' : 'down'}">${row.up ? 'UP' : 'DOWN'}</span></td>
+        <td>${row.http}</td>
+        <td>${row.details}</td>
+      `;
+      resultsBody.appendChild(tr);
+    }
+
+    function clearResults() {
+      resultsBody.innerHTML = '';
+      scanStatus.textContent = 'Risultati puliti.';
+    }
+
+    async function demoScan() {
+      clearResults();
+      scanStatus.textContent = 'Scansione demo in corso...';
+
+      const subnet = document.getElementById('subnet').value.trim();
+      const start = Number(document.getElementById('startHost').value);
+      const end = Number(document.getElementById('endHost').value);
+
+      for (let host = start; host <= end; host++) {
+        await new Promise(r => setTimeout(r, 60));
+        const ip = `${subnet}.${host}`;
+        const up = [1, 10, 20, 24].includes(host);
+        addRow({
+          ip,
+          up,
+          http: up ? 'aperto' : 'n/d',
+          details: up
+            ? (host === 10 ? 'Possibile switch web-managed' : host === 1 ? 'Gateway/router' : 'Host HTTP raggiungibile')
+            : 'Nessuna risposta'
+        });
+      }
+
+      scanStatus.textContent = 'Scansione demo completata.';
+    }
+
+    // Esempio di funzione reale, da attivare quando esiste un backend locale.
+    async function realScanViaLocalApi() {
+      const subnet = document.getElementById('subnet').value.trim();
+      const start = Number(document.getElementById('startHost').value);
+      const end = Number(document.getElementById('endHost').value);
+      const port = Number(document.getElementById('port').value);
+      const timeout = Number(document.getElementById('timeout').value);
+
+      scanStatus.textContent = 'Chiamata al backend locale in corso...';
+      resultsBody.innerHTML = '';
+
+      try {
+        const resp = await fetch('http://127.0.0.1:8787/api/scan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ subnet, start, end, port, timeout })
+        });
+
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+
+        const data = await resp.json();
+        data.results.forEach(addRow);
+        scanStatus.textContent = `Scansione reale completata: ${data.results.length} host analizzati.`;
+      } catch (err) {
+        scanStatus.textContent = 'Backend locale non raggiungibile. Avvia il servizio locale su 127.0.0.1:8787.';
+        console.error(err);
+      }
+    }
+
+    function generateConfig() {
+      const model = document.getElementById('switchModel').value;
+      const vlanId = document.getElementById('vlanId').value;
+      const vlanName = document.getElementById('vlanName').value;
+      const ports = document.getElementById('ports').value;
+      const uplink = document.getElementById('uplink').value;
+      const out = document.getElementById('preview');
+
+      let config = '';
+
+      if (model.includes('Cisco')) {
+        config = `configure terminal\n` +
+                 `vlan ${vlanId}\n` +
+                 ` name ${vlanName}\n` +
+                 `interface range gi0/${ports.split(',').join(',gi0/')}\n` +
+                 ` switchport mode access\n` +
+                 ` switchport access vlan ${vlanId}\n` +
+                 `interface gi0/${uplink}\n` +
+                 ` switchport mode trunk\n` +
+                 `end\nwrite memory\n`;
+      } else {
+        config = `# Modello: ${model}\n` +
+                 `create vlan ${vlanId} name ${vlanName}\n` +
+                 `assign access ports ${ports} vlan ${vlanId}\n` +
+                 `set trunk port ${uplink} allowed-vlans all\n`;
+      }
+
+      out.value = config;
+    }
+
+    document.getElementById('scanBtn').addEventListener('click', demoScan);
+    document.getElementById('demoBtn').addEventListener('click', demoScan);
+    document.getElementById('clearBtn').addEventListener('click', clearResults);
+    document.getElementById('genBtn').addEventListener('click', generateConfig);
+
+    generateConfig();
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Switch Configurator cs.exe.config
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Switch Configurator cs.exe
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Switch Configurator cs.pdb
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch Configurator cs.csproj.AssemblyReference.cache
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\namespace_Configurate.frmMain.resources
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch_Configurator_cs.Properties.Resources.resources
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch Configurator cs.csproj.GenerateResource.cache
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch Configurator cs.csproj.CoreCompileInputs.cache
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch C.C6294FE6.Up2Date
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch Configurator cs.exe
+D:\Scuola2025-2026\Switch Cfg\Switch Configurator cs\obj\Debug\Switch Configurator cs.pdb
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Switch Configurator cs.exe.config
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Switch Configurator cs.exe
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Switch Configurator cs.pdb
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.csproj.AssemblyReference.cache
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.exe.config
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\namespace_Configurate.frmMain.resources
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch_Configurator_cs.Properties.Resources.resources
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.csproj.GenerateResource.cache
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.csproj.CoreCompileInputs.cache
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch C.C6294FE6.Up2Date
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.exe
+D:\Scuola2025-2026\Programmi Miei\Switch Cfg\Switch Configurator cs ok\obj\Debug\Switch Configurator cs.pdb

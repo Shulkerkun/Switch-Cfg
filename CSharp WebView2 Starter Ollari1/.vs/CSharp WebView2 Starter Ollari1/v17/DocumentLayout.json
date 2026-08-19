@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Scuola2025-2026\\Programmi Miei\\Switch Cfg\\CSharp WebView2 Starter Ollari1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1204B91-4AF3-4C9D-9F46-143F0ED230E5}|CSharp WebView2 Starter Ollari1.csproj|d:\\scuola2025-2026\\programmi miei\\switch cfg\\csharp webview2 starter ollari1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1204B91-4AF3-4C9D-9F46-143F0ED230E5}|CSharp WebView2 Starter Ollari1.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cs",
+              "DocumentMoniker": "D:\\Scuola2025-2026\\Programmi Miei\\Switch Cfg\\CSharp WebView2 Starter Ollari1\\main.cs",
+              "RelativeDocumentMoniker": "main.cs",
+              "ToolTip": "D:\\Scuola2025-2026\\Programmi Miei\\Switch Cfg\\CSharp WebView2 Starter Ollari1\\main.cs",
+              "RelativeToolTip": "main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:16:56.231Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
